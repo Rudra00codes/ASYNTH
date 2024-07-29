@@ -1,6 +1,5 @@
 * {
   margin: 0%;
-  padding: 0%;
 }
 
 .body,
@@ -10,7 +9,7 @@ html {
 
 @font-face {
   font-family: 'MyFont';
-  src: url(/Fonts/SpaceArmour.otf);
+  src: url(/SpaceArmour.otf);
 }
 
 /* bannner */
@@ -56,7 +55,7 @@ a {
 
 @font-face {
   font-family: "MyFont2";
-  src: url(/Fonts/Kusanagi.otf);
+  src: url(/Kusanagi.otf);
 }
 
 .navbar li a {
@@ -408,6 +407,7 @@ h1 {
 }
 
 .explore-content p {
+  font-family: MyFont2;
   color: #774133;
 }
 
@@ -774,7 +774,10 @@ p {
 }
 
 .services-content p {
-  font-size: 3vmin;
+  font-family: MyFont2;
+  font-size: 2vmin;
+  word-spacing: 5px;
+  line-height: 1.6rem;
   padding-right: 6rem;
   margin-bottom: 30px;
 }

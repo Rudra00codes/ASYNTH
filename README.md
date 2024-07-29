@@ -1,5 +1,5 @@
 # Website
-Introducing "ASYNTH": Creating Tomorrow's Web Today.
+Introducing "ASYTH": Where Innovation Meets Intelligence.
 
 Hello everyone! As a passionate computer science engineer and a newbie web developer, I am thrilled to announce the launch of my latest project, "ASYNTH". With a deep-rooted love for technology and a commitment to delivering practical solutions, I have poured my expertise into creating a platform to revolutionize how we interact with the digital realm.
 
