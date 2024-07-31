@@ -17,16 +17,31 @@ html {
 .banner {
   width: 100vw;
   height: 100vh;
-  background-image: url(file:///C:/Users/dell/Desktop/website/accessories/bg8.jpg);
+  background-image: url(banner.jpg);
   background-size: cover;
   background-position: center;
 }
+  /* .banner spline-viewer{
+  transform: scale(1.2);
+  /* z-index: 10;  
+}   */
 
-a {
+a.cipher {
+  color: #0c0e1b;
+  font-family: MyFont;
+  font-size: 4.5rem;
+  letter-spacing: 5px;
   text-decoration: none;
 }
 
+
 /* navigation bar */
+.logo {
+  width: 150px;
+  margin: 0px 10px 0px 10px;
+  cursor: pointer;
+}
+
 
 .nav {
   position: absolute;
@@ -35,6 +50,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+ 
 }
 
 .navbar {
@@ -215,11 +231,6 @@ footer {
 }
 
 
-.logo {
-  width: 150px;
-  cursor: pointer;
-}
-
 /* heading */
 
 .content {
@@ -229,18 +240,14 @@ footer {
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
-  color: #46312ff0;
+  color: #0c0e1b;
 }
 
 .content h1 {
+  font-family: MyFont;
   font-size: 9vmin;
   margin-top: 80px;
   font-size: 4rem;
-}
-
-
-h1 {
-  font-family: MyFont;
 }
 
 
@@ -269,7 +276,7 @@ h1 {
 }
 .item-hints .hint-dot {
   z-index: 3;
-  border: 3px solid #5a3d3af0;
+  border: 3px solid #0c0e1b;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -280,7 +287,7 @@ h1 {
   align-items: center;
   justify-content: center;
   font-family: MyFont2;
-  color: #5a3d3af0;
+  color: #0c0e1b;
 }
 .item-hints .hint-radius {
   background-color: rgba(219, 53, 53, 0.803);
@@ -305,14 +312,14 @@ h1 {
   position: absolute;
   z-index: 5;
   padding: 35px 0;
-  border: 3px solid #513d3b;
+  border: 3px solid #0c0e1b;
   border-bottom: transparent;
   border-left: transparent;
   opacity: 0;
   transition: opacity 0.7s ease, visibility 0.7s ease;
   background: transparent;
-  backdrop-filter: blur(10px);
-  color: #5a3d3af0;
+  backdrop-filter: blur(8px);
+  color: #0c0e1b;
   visibility: hidden;
   pointer-events: none;
 }
@@ -323,7 +330,7 @@ h1 {
   opacity: 1;
   -webkit-transition: opacity 0.7s ease, visibility 0.7s ease;
   transition: opacity 0.7s ease, visibility 0.7s ease;
-  color: #5a3d3af0;
+  color: #0c0e1b;
   visibility: visible;
   pointer-events: none;
 }
@@ -332,8 +339,8 @@ h1 {
   bottom: -10rem;
   left: 2.9999999rem;
   content: "";
-  background-color: #5a3d3af0;
-  height: 2px;
+  background-color: #0c0e1b;
+  height: 3px;
   position: absolute;
   transition: width 0.4s;
 }
@@ -347,11 +354,11 @@ h1 {
   -webkit-transform: rotate(-225deg);
   transform: rotate(230deg);
   bottom: -10rem;
-  left: 3rem;
+  left: 3.1rem;
   width: 127px;
   content: "";
-  background-color: #5a3d3af0;
-  height: 2px;
+  background-color: #0c0e1b;
+  height: 3px;
   position: absolute;
   opacity: 1;
   -webkit-transition: opacity 0.5s ease;
@@ -375,57 +382,6 @@ h1 {
   color: whitesmoke;
 } */
 
-/* explore section  */
-
-.explore {
-  width: 100%;
-  height: 90vh;
-  margin-bottom: 0px;
-  /* background-image: url(file:///C:/Users/dell/Desktop/Works/website/accessories/workspace-desk.jpg); */
-  background-image: url(Assests/PNG/Backgrounds/bg2.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-}
-
-.explore-content {
-  width: 50%;
-  padding: 0px 33px 50px 43px;
-  /* padding-left: 43px; */
-  color: #603b32f2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.explore-content h1 {
-  font-size: 9vmin;
-  margin: 50px 103px;
-  text-align: center;
-}
-
-.explore-content p {
-  font-family: MyFont2;
-  color: #774133;
-}
-
-.explore-content .ctn {
-  margin-top: 40px;
-}
-
-
-.illustration1 {
-  border: none;
-  width: 600px;
-  cursor: pointer;
-  display: block;
-  margin-bottom: 5rem;
-  margin-right: 1rem;
-  /* padding: 0.3rem; */
-}
-
 
 /* buttons */
 button,
@@ -433,12 +389,12 @@ button::after {
   padding: 16px 10px 16px 15px;
   font-size: 13px;
   font-family: MyFont; 
-   background: linear-gradient(45deg, transparent 5%, #85543e 5%);/*linear-gradient(45deg, transparent 5%, #ff013c 5%); */
+   background: linear-gradient(45deg, transparent 5%, #e8ebf4 5%);/*linear-gradient(45deg, transparent 5%, #ff013c 5%); */
   border: 0;
-  color: #fff;
+  color: #0c0e1b;
   letter-spacing: 3px;
   line-height: 1;
-  box-shadow: 6px 0px 0px #513d3b;
+  box-shadow: 6px 0px 0px #0c0e1b;
   outline: transparent;
   position: relative;
   bottom: 3.35rem;
@@ -567,6 +523,11 @@ span {
   border: none;
 } */
 
+
+
+
+
+
 /* social icons */
 
 .share-btn-container {
@@ -638,7 +599,7 @@ section {
   text-decoration: none;
   text-align: center;
   font-size: 5vmin;
-  color: #5d362c;
+  color: #0c0e1b;
 }
 
 .row {
@@ -667,7 +628,7 @@ h3 {
 
 p {
   font-family: MyFont2;
-  color: #774133;
+  color: #0c0e1b;
   padding: 0px 30px;
 }
 
@@ -686,6 +647,59 @@ p {
   border-radius: 25px;
   margin-left: 2rem;
 }
+
+
+
+/* explore section  */
+
+.explore {
+  width: 100%;
+  height: 90vh;
+  margin-bottom: 0px;
+  /* background-image: url(file:///C:/Users/dell/Desktop/Works/website/accessories/workspace-desk.jpg); */
+  background-image: url(Assests/PNG/Backgrounds/bg2.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.explore-content {
+  width: 50%;
+  padding: 0px 33px 50px 43px;
+  /* padding-left: 43px; */
+  color: #603b32f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.explore-content h1 {
+  font-size: 9vmin;
+  margin: 50px 103px;
+  text-align: center;
+}
+
+.explore-content p {
+  font-family: MyFont2;
+  color: #774133;
+}
+
+.explore-content .ctn {
+  margin-top: 40px;
+}
+
+
+/* .illustration1 {
+  border: none;
+  width: 600px;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 5rem;
+  margin-right: 1rem;
+  /* padding: 0.3rem; 
+} */
 
 
 /* Services */
