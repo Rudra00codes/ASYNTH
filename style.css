@@ -17,21 +17,22 @@ html {
 .banner {
   width: 100vw;
   height: 100vh;
-  background-image: url(banner.jpg);
+  background-image: url(Asynth_bgs/banner.jpg);
   background-size: cover;
   background-position: center;
 }
-  /* .banner spline-viewer{
-  transform: scale(1.2);
-  /* z-index: 10;  
-}   */
+
+.banner spline-viewer {
+  z-index: 0;
+}
 
 a.cipher {
-  color: #0c0e1b;
+  color: #7ead09;
   font-family: MyFont;
   font-size: 4.5rem;
   letter-spacing: 5px;
   text-decoration: none;
+  z-index: 1;
 }
 
 
@@ -50,13 +51,14 @@ a.cipher {
   display: flex;
   align-items: center;
   justify-content: space-between;
- 
+
 }
 
 .navbar {
   display: flex;
   list-style: none;
   align-items: center;
+  z-index: 1;
 }
 
 .navbar .ctn {
@@ -234,10 +236,9 @@ footer {
 /* heading */
 
 .content {
-  padding-left: -4rem;
   width: 100%;
-  position: absolute;
-  top: 50%;
+  position:absolute;
+  top: 37%;
   transform: translateY(-50%);
   text-align: center;
   color: #0c0e1b;
@@ -245,9 +246,10 @@ footer {
 
 .content h1 {
   font-family: MyFont;
-  font-size: 9vmin;
-  margin-top: 80px;
-  font-size: 4rem;
+  font-size: 8vmin;
+  /* margin-top: 80px; */
+  font-size: 3.7rem;
+  z-index: -1;
 }
 
 
@@ -266,14 +268,16 @@ footer {
   cursor: pointer;
   display: flex;
   justify-content: flex-start;
-
 }
+
 .item-hints .hint {
   margin: 5px auto;
   position: relative;
   display: flex;
   left: 7rem;
 }
+
+
 .item-hints .hint-dot {
   z-index: 3;
   border: 3px solid #0c0e1b;
@@ -289,6 +293,7 @@ footer {
   font-family: MyFont2;
   color: #0c0e1b;
 }
+
 .item-hints .hint-radius {
   background-color: rgba(219, 53, 53, 0.803);
   border-radius: 50%;
@@ -301,11 +306,13 @@ footer {
   -webkit-transform: scale(0);
   transform: scale(0);
 }
+
 .item-hints .hint[data-position="1"] .hint-content {
   top: 50px;
   left: 50%;
   margin-left: 56px;
 }
+
 .item-hints .hint-content {
   width: 300px;
   height: 1px;
@@ -323,6 +330,7 @@ footer {
   visibility: hidden;
   pointer-events: none;
 }
+
 .item-hints .hint:hover .hint-content {
   position: absolute;
   z-index: 5;
@@ -334,6 +342,7 @@ footer {
   visibility: visible;
   pointer-events: none;
 }
+
 .item-hints .hint-content::before {
   width: 0px;
   bottom: -10rem;
@@ -344,10 +353,12 @@ footer {
   position: absolute;
   transition: width 0.4s;
 }
+
 .item-hints .hint:hover .hint-content::before {
   width: 253px;
   transition: width 0.4s;
 }
+
 .item-hints .hint-content::after {
   -webkit-transform-origin: 0 50%;
   transform-origin: 0 50%;
@@ -366,15 +377,18 @@ footer {
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
+
 .item-hints .hint:hover .hint-content::after {
   opacity: 1;
   visibility: visible;
 }
+
 .item-hints .hint[data-position="4"] .hint-content {
   bottom: 85px;
   left: 50%;
   margin-left: 56px;
 }
+
 /* .ctn {
   padding: 7px 13px;
   background-image: linear-gradient(120deg, #ac6e51 0%, #583128 100%);
@@ -388,17 +402,18 @@ button,
 button::after {
   padding: 16px 10px 16px 15px;
   font-size: 13px;
-  font-family: MyFont; 
-   background: linear-gradient(45deg, transparent 5%, #e8ebf4 5%);/*linear-gradient(45deg, transparent 5%, #ff013c 5%); */
+  font-family: MyFont;
+  background: linear-gradient(45deg, transparent 5%, #0c0e1b 5%);
+  /*linear-gradient(45deg, transparent 5%, #ff013c 5%); */
   border: 0;
-  color: #0c0e1b;
+  color: #e8ebf4;
   letter-spacing: 3px;
   line-height: 1;
-  box-shadow: 6px 0px 0px #0c0e1b;
+  box-shadow: 6px 0px 0px #97d301;
   outline: transparent;
   position: relative;
   bottom: 3.35rem;
-  right: 4rem;
+  right: 10rem;
 }
 
 button::after {
@@ -657,9 +672,9 @@ p {
   height: 90vh;
   margin-bottom: 0px;
   /* background-image: url(file:///C:/Users/dell/Desktop/Works/website/accessories/workspace-desk.jpg); */
-  background-image: url(Assests/PNG/Backgrounds/bg2.png);
+  background-image: url(banner2.png);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
