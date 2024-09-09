@@ -16,7 +16,7 @@ Visit **ASYNTH** today and embark on this exciting journey together!
 
 https://github.com/user-attachments/assets/e97985f3-1e42-43c2-bfac-f35a1effabd0
 
-[Watch or Download the Preview Video](https://github.com/Rudra00codes/ASYNTH/releases/download/v1.0/ASYNTH%20(2).mp4)
+[Watch or Download the Preview Video](https://github.com/Rudra00codes/ASYNTH/releases/download/v1.0/ASYNTH.2.mp4)
 
 
 
