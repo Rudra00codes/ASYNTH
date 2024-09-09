@@ -14,12 +14,9 @@ Visit **ASYNTH** today and embark on this exciting journey together!
 
 ## Preview Video
 
-<video width="600" controls>
-  <source src="https://github.com/Rudra00codes/ASYNTH/blob/main/ReadmeAssets/ASYNTH%20(2).mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+https://github.com/user-attachments/assets/e97985f3-1e42-43c2-bfac-f35a1effabd0
 
-[Download the Video](https://github.com/Rudra00codes/ASYNTH/blob/main/ReadmeAssets/ASYNTH%20(2).mp4)
+[Watch or Download the Preview Video](https://github.com/Rudra00codes/ASYNTH/releases/download/v1.0/ASYNTH%20(2).mp4)
 
 
 
