@@ -12,11 +12,15 @@ I invite you to explore **ASYNTH** and experience firsthand how our innovative f
 
 Visit **ASYNTH** today and embark on this exciting journey together!
 
-## Video Demonstration
+## Preview Video
 
-[Download or Watch the Video](https://github.com/Rudra00codes/ASYNTH/blob/main/ReadmeAssets/ASYNTH%20(2).mp4)
+<video width="600" controls>
+  <source src="https://github.com/Rudra00codes/ASYNTH/blob/main/ReadmeAssets/ASYNTH%20(2).mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
-> Click the link above to watch a demonstration of ASYNTH in action.
+[Download the Video](https://github.com/Rudra00codes/ASYNTH/blob/main/ReadmeAssets/ASYNTH%20(2).mp4)
+
 
 
 ## Contributing to ASYNTH
