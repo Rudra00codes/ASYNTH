@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Space Grotesk font faces */
+@font-face {
+	font-family: 'Space Grotesk';
+	font-style: normal;
+	font-weight: 300 700; /* variable axis range */
+	font-display: swap;
+	src: url('../assets/fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+}
+/* Static fallbacks (optional, only if variable fails) */
+@font-face { font-family:'Space Grotesk'; font-style:normal; font-weight:300; font-display:swap; src:url('../assets/fonts/Space_Grotesk/static/SpaceGrotesk-Light.ttf') format('truetype'); }
+@font-face { font-family:'Space Grotesk'; font-style:normal; font-weight:400; font-display:swap; src:url('../assets/fonts/Space_Grotesk/static/SpaceGrotesk-Regular.ttf') format('truetype'); }
+@font-face { font-family:'Space Grotesk'; font-style:normal; font-weight:500; font-display:swap; src:url('../assets/fonts/Space_Grotesk/static/SpaceGrotesk-Medium.ttf') format('truetype'); }
+@font-face { font-family:'Space Grotesk'; font-style:normal; font-weight:600; font-display:swap; src:url('../assets/fonts/Space_Grotesk/static/SpaceGrotesk-SemiBold.ttf') format('truetype'); }
+@font-face { font-family:'Space Grotesk'; font-style:normal; font-weight:700; font-display:swap; src:url('../assets/fonts/Space_Grotesk/static/SpaceGrotesk-Bold.ttf') format('truetype'); }
+
+html, body, #root { height:100%; margin:0; padding:0; }
+body { font-family: 'Space Grotesk', system-ui, Arial, sans-serif; }
+/* Global 90% scale via root font-size (rem-based Tailwind sizing shrinks uniformly) */
+@layer base {
+	:root { font-size: 90%; }
+	/* Optional slight adaptive adjustments; tweak/remove as desired */
+	@media (max-width: 640px) { :root { font-size: 88%; } }
+	@media (min-width: 1600px) { :root { font-size: 92%; } }
+}

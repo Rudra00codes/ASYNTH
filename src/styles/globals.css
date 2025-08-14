@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom font faces */
+@font-face {
+  font-family: 'MyFont';
+  src: url('/assets/fonts/SpaceArmour.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MyFont2';
+  src: url('/assets/fonts/Kusanagi.otf') format('opentype');
+  font-display: swap;
+}
+
+/* Glitch button base (using pseudo-element cannot be utility-only) */
+.glitch-button { position:relative; padding:0.75rem 1.5rem; font-family:'MyFont',sans-serif; letter-spacing:0.2em; background:#0c0e1b; color:#fff; box-shadow:6px 0 0 #97d301; overflow:hidden; user-select:none; }
+.glitch-button::after { 
+  content: attr(data-label); 
+  position:absolute; inset:0; display:block; 
+  background:linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #ff013c 5%);
+  text-shadow:-3px -3px 0 #f8f005, 3px 3px 0 #00e6f6; 
+  clip-path:inset(50% 50% 50% 50%); 
+}
+.glitch-button:hover::after { animation: glitch 1s steps(2,end); }
+
+/* Cipher text style */
+.cipher-text { font-family:'MyFont',sans-serif; color:#7ead09; letter-spacing:5px; }
+
+/* Scroll to top button */
+#scrolltp { position:fixed; right:3rem; bottom:3rem; background:#6c4a3f; color:#fff; padding:0.5rem; border-radius:0.75rem; cursor:pointer; opacity:0; transition:opacity .3s; }
+#scrolltp.show { opacity:1; }
+
+body { background:#fff; color:#0c0e1b; font-family:'MyFont2',sans-serif; }
