@@ -1,72 +1,70 @@
-# ASYNTH: Where Innovation Meets Intelligence
+# Personal Portfolio
 
-![ASYNTH Logo](https://github.com/Rudra00codes/ASYNTH/blob/main/ReadmeAssets/ASYNTH_LogoW.png)
+Minimal, fast, and dark-themed personal portfolio built with React, Vite, and Tailwind CSS.
 
-Hello everyone! As a passionate computer science engineer and a newbie web developer, I am thrilled to announce the launch of my latest project, **ASYNTH**.
+## Features
 
-With a deep-rooted love for technology and a commitment to delivering practical solutions, I have poured my expertise into creating a platform to revolutionize how we interact with the digital realm.
+- Responsive three-column layout (collapsible at smaller breakpoints)
+- Reusable Panel component with double-ring outline (inner + outer)
+- Sections: Profile, Tech Stack, Links, Daily Tools, Project Highlight
+- Custom typography using Space Grotesk (variable + static fallbacks)
+- Subtle glassy panels with blur and shadows
+- Lightweight Vite dev server and build pipeline
 
-By combining my computer science background with a user-centric approach, I have built a website that offers a seamless experience, making technology more accessible and enjoyable for everyone. From in-depth tutorials and educational resources to practical guides and the latest industry trends, I cover a wide range of topics to help you stay ahead in the ever-evolving digital landscape.
+## Tech Stack
 
-I invite you to explore **ASYNTH** and experience firsthand how our innovative features and insightful resources can empower you in your technological endeavors. Join our growing community of like-minded individuals, stay updated with the latest trends, and unlock your potential in the digital world.
+- React 18 + Vite 5
+- Tailwind CSS 3
+- Space Grotesk font (bundled locally in `src/assets/fonts/Space_Grotesk`)
 
-Visit **ASYNTH** today and embark on this exciting journey together!
+## Getting Started
 
-## Preview Video
+Prerequisites: Node.js 18+
 
-https://github.com/user-attachments/assets/e97985f3-1e42-43c2-bfac-f35a1effabd0
+Development
 
-[Watch or Download the Preview Video](https://github.com/Rudra00codes/ASYNTH/releases/download/v1.0/ASYNTH.2.mp4)
+```powershell
+npm install
+npm run dev
+```
 
+Production build
 
+```powershell
+npm run build
+npm run preview
+```
 
-## Contributing to ASYNTH
+## Project Structure
 
-We welcome contributions from everyone! Whether you're fixing a bug, adding a new feature, or improving documentation, your contributions are valuable to us.
+```
+src/
+  components/
+    layout/        # AppShell, Panel
+    profile/       # ProfileCard
+    tech/          # TechStackPanel
+    links/         # LinksPanel
+    daily/         # ToolIconRail, DailyToolStack
+    project/       # ProjectHighlightCard
+  styles/
+    global.css     # Tailwind directives, font-face, base resets
+  assets/
+    fonts/Space_Grotesk/  # Space Grotesk (variable + static)
+```
 
-Here’s how you can contribute to **ASYNTH**:
+## Customization
 
-### 1. Fork the Repository
-- Go to the top-right corner of the repository page and click on **Fork**. This will create a copy of the repository under your GitHub account.
+- Fonts: `global.css` declares `@font-face` for Space Grotesk and sets `body { font-family: 'Space Grotesk', ... }`.
+- Global scale: `:root { font-size: 90% }` in `global.css` to slightly reduce overall size.
+- Panels: add `panel-double` to any Panel to show the inner + outer ring.
+- Tailwind: extend theme in `tailwind.config.js` (colors, font stacks, radii) as needed.
 
-### 2. Clone the Forked Repository
-- Clone the repository to your local machine:
-  ```bash
-  git clone https://github.com/your-username/your-repo-name.git
+## Notes
 
-### 3. Create a New Branch
-- Make sure you're working on a new branch for your feature or fix
-  ```bash 
-  git checkout -b feature/your-feature-name
-### 4. Make Your Changes
- - Work on your feature or fix. Make sure to follow any guidelines for coding standards and best practices.
-
-### 5. Commit Your Changes
- - Once your changes are ready, commit them with a meaningful message:
-   ```bash
-   git add .
-   git commit -m "Add feature: [brief description of the feature]"
-### 6. Push to Your Forked Repository
- - Push your branch to your fork:
-   ```bash
-   git push origin feature/your-feature-name
-    
-### 7. Create a Pull Request
- - Go to your forked repository on GitHub and click on the Pull Request button.
- - Select the branch you worked on and compare it with the original repository’s branch (usually main or master).
- - Provide a meaningful description for the pull request, explaining what your contribution does.
-
-After submitting, the project maintainer will review your pull request and provide feedback or merge it if it meets the project’s standards.
-
-<hr>
-
-### Additional Guidelines
-   Please ensure your contributions are well-documented, with clear commit messages.
-   If you are adding new functionality, consider writing tests to ensure it works as expected.
-   Be respectful and considerate in your communications and code reviews.
-   Thank you for helping improve ASYNTH!
+- Icons/graphics are placeholders; swap with your assets or icon set of choice.
+- The double-ring effect is implemented via a small runtime-injected style in `Panel.jsx` for simplicity. This can be moved to a CSS file or Tailwind plugin later.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/Rudra00codes/ASYNTH/blob/main/ReadmeAssets/LICENSE) file for details.
+MIT — see [LICENSE](./LICENSE).
 
