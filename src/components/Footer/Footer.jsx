@@ -10,12 +10,12 @@ const socials = [
 
 const Footer = () => {
   return (
-    <footer className="mt-32 bg-asynth-brown text-white text-center py-10" id="contact">
-      <h3 className="font-space text-3xl mb-4">WEBdev</h3>
+    <footer className="mt-24 bg-neutral-800 text-white text-center py-10" id="contact">
+      <h3 className="text-2xl font-bold mb-4">WEBdev</h3>
       <p className="max-w-2xl mx-auto opacity-80 mb-6 px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium rerum hic perspiciatis dolores Unde aut maxime.</p>
       <div className="flex items-center justify-center space-x-4 mb-4">
         {socials.map(s => (
-          <a key={s.icon} href={s.href} target="_blank" rel="noreferrer" className="text-xl hover:scale-125 transition-transform">
+          <a key={s.icon} href={s.href} target="_blank" rel="noreferrer" className="text-xl hover:scale-110 transition-transform">
             <i className={`fa-brands fa-${s.icon}`}></i>
           </a>
         ))}

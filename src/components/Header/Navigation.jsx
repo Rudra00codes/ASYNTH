@@ -10,15 +10,15 @@ const navItems = [
 const Navigation = ({ open, setOpen }) => {
   return (
     <nav>
-      <ul className={`hidden md:flex space-x-10 font-kusanagi text-asynth-dark`}> 
+      <ul className={`hidden md:flex space-x-8 text-white/90`}> 
         {navItems.map(item => (
-          <li key={item.name} className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-asynth-dark after:transition-all hover:after:w-3/4">
+          <li key={item.name} className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-white/70 after:transition-all hover:after:w-3/4">
             <a href={item.href}>{item.name}</a>
           </li>
         ))}
       </ul>
       {open && (
-        <ul className="md:hidden absolute top-16 right-4 bg-white/70 backdrop-blur-md shadow-lg rounded-xl p-6 flex flex-col space-y-4 font-kusanagi text-asynth-dark">
+        <ul className="md:hidden absolute top-16 right-4 bg-neutral-900/80 text-white backdrop-blur-md shadow-lg rounded-xl p-6 flex flex-col space-y-4">
           {navItems.map(item => (
             <li key={item.name}>
               <a href={item.href} onClick={() => setOpen(false)}>{item.name}</a>

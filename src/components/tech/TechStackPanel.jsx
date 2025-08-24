@@ -15,13 +15,13 @@ const Tag = ({ children }) => (
 
 const TechStackPanel = () => {
   return (
-  <Panel className="panel-double">
-      <header className="mb-6">
-        <div className="text-5xl font-extrabold leading-none tracking-tight">{`{ }`}</div>
-        <h2 className="mt-2 text-5xl font-extrabold leading-tight">TECH<br/>STACK</h2>
-        <div className="h-1 bg-white w-40 mt-4 rounded-full" />
+  <Panel className="panel-double p-4 sm:p-6">
+      <header className="mb-4 sm:mb-6">
+        <div className="text-4xl sm:text-5xl font-extrabold leading-none tracking-tight">{`{ }`}</div>
+        <h2 className="mt-2 text-4xl sm:text-5xl font-extrabold leading-tight">TECH<br/>STACK</h2>
+        <div className="h-1 bg-white w-32 sm:w-40 mt-4 rounded-full" />
       </header>
-      <div className="space-y-6 text-sm">
+      <div className="space-y-5 sm:space-y-6 text-sm">
         {groups.map(g => (
           <div key={g.title}>
             <h3 className="font-semibold mb-2">{g.title}:</h3>
