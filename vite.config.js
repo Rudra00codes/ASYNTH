@@ -22,9 +22,7 @@ export default defineConfig({
       }
     }
   },
-  optimizeDeps: {
-    include: ['@splinetool/runtime', '@splinetool/viewer'],
-  },
+  optimizeDeps: {},
   server: {
     port: 3000,
     open: true,
