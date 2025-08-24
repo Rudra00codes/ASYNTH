@@ -26,3 +26,20 @@ body { font-family: 'Space Grotesk', system-ui, Arial, sans-serif; }
 	@media (max-width: 640px) { :root { font-size: 88%; } }
 	@media (min-width: 1600px) { :root { font-size: 92%; } }
 }
+
+/* Hide scrollbars for horizontal rails (WebKit + Firefox) */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Ink pull animation used by the Yin–Yang theme button */
+@keyframes ink-pull {
+	0% {
+		/* --ink-start is calculated in JS to cover the target container */
+		transform: translate(-50%, -50%) scale(var(--ink-start, 16));
+		opacity: var(--ink-opacity, 0.45);
+	}
+	100% {
+		transform: translate(-50%, -50%) scale(0);
+		opacity: 0;
+	}
+}
